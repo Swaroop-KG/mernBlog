@@ -54,9 +54,10 @@ export default function Header() {
         to='/'
         className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'
       >
-        <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
-          Farmer's
-        </span>
+        <span className="px-2 py-1 bg-gradient-to-r from-green-400 via-blue-500 to-yellow-500 rounded-lg text-white">
+  Swaroop's 
+  </span>
+
         Blog
       </Link>
       <form onSubmit={handleSubmit}>
@@ -103,7 +104,7 @@ export default function Header() {
           </Dropdown>
         ) : (
           <Link to='/sign-in'>
-            <Button gradientDuoTone='purpleToBlue' outline>
+            <Button gradientDuoTone='greenToBlue' outline>
               Sign In
             </Button>
           </Link>
@@ -112,13 +113,22 @@ export default function Header() {
       </div>
       <Navbar.Collapse>
         <Navbar.Link active={path === '/'} as={'div'}>
-          <Link to='/'>Home</Link>
+        <Link to='/'>
+  <span className=" text-xl animate-pulse text-green-500 hover:text-red-500 transition-all duration-1000">
+    Home
+  </span>
+</Link>
+
         </Navbar.Link>
         <Navbar.Link active={path === '/about'} as={'div'}>
-          <Link to='/about'>About</Link>
+          <Link to='/about'><span className=" text-xl animate-pulse text-green-500 hover:text-red-500 transition-all duration-1000">
+    About
+  </span></Link>
         </Navbar.Link>
         <Navbar.Link active={path === '/projects'} as={'div'}>
-          <Link to='/projects'>Projects</Link>
+          <Link to='/projects'><span className=" text-xl animate-pulse text-green-500 hover:text-red-500 transition-all duration-1000">
+    Projects
+  </span></Link>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
