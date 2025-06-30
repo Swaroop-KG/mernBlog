@@ -88,8 +88,20 @@ Express
 Google Developers Console
 
 
+## ✅ Upcoming Features
+📦 Blog categories and tags
 
+🧑‍🤝‍🧑 User profiles
+
+📊 Analytics dashboard for admin
+
+📧 Email notifications on comments and replies
+
+## 🤝 Contributing
+Contributions, issues and feature requests are welcome!
+Feel free to check the issues page.
 
 ---
 
-Let me know if you'd like to auto-generate badges (build status, license, etc.) or if your blog is deployed so we c
+Let me know if you'd like to auto-generate badges (build status, license, etc.) or if your blog is deployed so we 
+
